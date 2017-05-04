@@ -1,0 +1,14 @@
+hello edit form
+<h1>Edit Photo</h1>
+<form action="/update_photo/<%=@photo.id%>" class="form-horizontal">
+  <p><label for="image_url">Image URL
+  </label>
+  <input type = "text" name="image_url" placeholder="image_url" id="image_url" class="form-control" value="<%=@photo.source%>"></p>
+
+    <p><label for="image_caption">Caption
+    </label>
+    <input type = "text" name="image_caption" placeholder="image_caption" id="image_caption" class="form-control" value="<%=@photo.caption%>" id="image_caption"></p>
+
+<button>Update Photo</button>
+
+</form>
